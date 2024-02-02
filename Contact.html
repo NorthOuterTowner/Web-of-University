@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Web page/Contact</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div id="wrapper">
+
+	<header>
+		<h1>Beijing Jiaotong University</h1>
+	</header>
+
+	<nav>
+		<ul style="margin: 0;" id="navigation">
+			<li><a href="home.html">Home</a>
+			</li>
+			<li><a href="Services.html" target="_blank">Services</a>
+				<ul>
+					<li><a href="CalculateGPA.html">calculate</a></li>
+				</ul>
+			</li>
+			<li><a href="Contact.html" target="_blank">Contact</a>
+				<ul>
+					<li><a href="#statement">statement</a></li>
+					<li><a href="#contacting">contacting</a></li>
+				</ul>
+			</li>
+			<li><a href="Game.html" target="_blank">Game</a></li>
+			<li><a href="Contact.html" target="_blank">test2</a></li>
+			<li><a href="Contact.html" target="_blank">test3</a></li>
+
+		</ul>
+ 	</nav>
+
+	<main>
+		<div id="statement">
+			<hr style="margin: 0;">
+			<h2 class="contacth" style="margin: 0;">Statement:</h2>
+			<p>This Web is not a official website of Beijing jiaotong University,it is just a student who want to learn HTML5 writing it,aiming to improve his ability.If this website violate your right,contacting with me and I'll delete it.Thank you.</p> 
+		</div>
+		<div id="contacting">
+			<p>Or you have anything which make you want to associate with me,just looking this page.</p>
+		</div>
+		<div style="background-image:url(Pictures/emailsend.gif);background-position: center right; background-repeat:no-repeat; background-size:contain;">
+			<hr style="margin: 0;">
+			<h2 class="contacth" style="margin: 0;">Get in contact with <b>ME</b>:</h2>
+			<p style="text-indent: 4em;">Email:<a href="mailto:lrz08302005@163.com">lrz08302005@163.com</a></p>
+			<p style="text-indent: 4em;margin: 0;">Wechat:liruize830</p>
+		</div>
+		<div class="forms">
+			<hr style="margin: 0;">
+			<h2 class="contacth" style="margin: 0;">Get in contact with <b>YOU</h2></p>
+			<form method="post" action="send_email.php">
+				<fieldset>
+					<legend>Personal Information</legend>
+					<label for="name">Name:</label><br>
+					<input type="text" name="name" id="name" required><br>
+					<label for="route">Way to associate with you:</label><br>
+					<input type="text" name="route" id="route" required><br>
+
+					<fieldset><legend>Gender:</legend>
+						<input type="radio" name="gender" id="gendermale" value="male" >Male<br>
+						<input type="radio" name="gender" id="genderfemale" value="female" >Female<br>
+					</fieldset>
+				</fieldset>
+				<fieldset>
+					<legend>School you want to know more:</legend>
+						<input type="checkbox" name="schoollike" id="jemetienyow" value="1">Jeme TienYow<br>
+						<input type="checkbox" name="schoollike" id="law" value="2">Law<br>
+						<input type="checkbox" name="schoollike" id="software" value="3">Software<br>
+				</fieldset>
+
+				<label for="ask">Things you want to acquire:</label><br><textarea name="ask" id="ask" cols="40" rows="5" maxlength="500">Enter here.</textarea><br>
+				<input type="submit">
+				<input type="reset">
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<hr>
+		<p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border:0;width:88px;height:31px"
+			src="http://jigsaw.w3.org/css-validator/images/vcss"
+            		alt="Valid CSS!" />
+    			</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    			<img style="border:0;width:88px;height:31px"
+        		src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        		alt="Valid CSS!" />
+    			</a>	
+		</p>
+     		<p>Thanks for <a href="http://webdevbasics.net">Basics of Web Design Textbook Companian</a></p>
+		<p>Copyright &copy; 2024 LiRuize.All right reserved</p>
+  		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+/*Wrap all part of website*/
+#wrapper{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*head part*/
+h1{	background-color:#BBDEFB;
+	color:#E2FFFF;
+	font-family:Georgia,"Times New Roman",serif;
+    line-height:200%;
+  	text-indent:1em;
+ 	text-shadow:3px 3px 5px #000000;
+	text-transform:Uppercase;
+	min-width: 700px;
+	margin: 0;
+	}
+.mainh{	min-width: 1100px;
+	max-width: 1500px;
+	background-color:#b1e3e3;
+	color:#237B7B;
+	font-family:Georgia,"Times New Roman",serif;
+	text-align: center;
+}
+.contacth{
+	min-width: 1100px;
+	max-width: 1500px;
+	text-indent: 1em;
+	background-color:#b1e3e3;
+	color:#237B7B;
+	font-family:Georgia,"Times New Roman",serif;
+}
+
+/*Navigation part*/
+nav{
+	background-color: #BBDEFB;
+	margin: 0;
+	position: sticky;top: 0;
+	width:1200px;
+	height: 30px;
+	font-weight:bold;
+	font-size:1.25em;
+	}
+#navSer{
+	background-color: #b3dbfe;
+	margin: 0px;
+	width:1200px;
+	height: 60px;
+	font-weight:bold;
+	font-size:1.25em;	
+}
+nav ul{
+	margin: 0;
+	list-style-type: none;
+}
+#navSer ul{
+	margin: 10px;
+	list-style-type: none;
+}
+nav ul li{
+	height:30px;
+	width:170px;
+	list-style-type:none;
+	float:left;
+	font:1em Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+#navSer ul li{
+	display: block;
+	margin-top: 10px;
+	height:30px;
+	list-style-type:none;
+	float:left;
+	font:1em Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin-right: 10px;
+}
+nav ul li a{
+	color:#000000;
+	width: 163px;
+	margin:0px;
+	padding:0 0 0 8px;
+	display:inline-block;
+	background:#BBDEFB;
+	line-height:29px;
+	border:1px solid #000000;
+	text-decoration:none;
+}
+#navSer ul li a{
+	color:#00000084;
+	width:100px;
+	margin:0px;
+	padding:0 0 0 8px;
+	display:inline-block;
+	background:#b3dbfe;
+	line-height:29px;
+	border:1px solid #3d87d1;
+	/*border-radius: 10%;*/
+	border-top-left-radius: 30% 100%;
+	border-bottom-left-radius: 30% 100%;
+	border-top-right-radius: 30% 100%;
+	border-bottom-right-radius: 30% 100%;
+	text-decoration:none;
+}
+#navSer a:hover{
+	color:#ffffff;
+	width:100px;
+	margin:0px;
+	padding:0 0 0 8px;
+	display:inline-block;
+	background:#6090f6;
+	line-height:29px;
+	border:1px solid #3d87d1;
+		border-top-left-radius: 30% 100%;
+		border-bottom-left-radius: 30% 100%;
+		border-top-right-radius: 30% 100%;
+		border-bottom-right-radius: 30% 100%;
+	text-decoration:none;
+}
+a{
+	color: #000000;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	background-color:#a4d3fa;
+	border-bottom:1px #ff0000;
+}
+nav ul li ul li{
+	height:30px;
+	font-size: 1em;
+}
+nav ul li ul li a{
+	background-color:#BBDEFB;
+	line-height:30px;
+}
+nav ul li ul{
+	display:none;
+}
+nav ul li:hover ul{
+	display:block;
+}
+nav ul li ul li a:hover{
+	background-color:#BBDEFB;
+}
+
+/*main part*/
+#picture_gallery{display: flex;flex-wrap: nowrap;}
+main p{
+	min-width: 1100px;
+	max-width: 1500px;
+	color:black;
+	font-family:Georgia,"Times New Roman",serif;
+	font-size:1.25em;
+	text-indent:2em;
+	}
+ul{
+	font-weight:bold;
+}
+table{	margin:auto;
+		border:5px solid #000066;
+		width:600px;
+		text-align:center;
+		}
+tr:first-of-type{background-color:#006;color:#FFFFFF}
+tr:nth-of-type(even){background-color:#EAEAEA}
+td,th{padding:5px;border-style:none}
+.company{
+	font-weight:bold;
+	font-size:1.25em;
+	}
+figure{
+	border:3px solid #000000;
+	padding:1.5px;
+	width:95%
+	}
+figcapation{
+	font-family:Papyrus,fantasy;
+	text-align: center ;
+	}
+a:link{color:#330066}
+a:hover{color: #327cfa;}
+
+
+/*footer part*/
+footer{
+	min-width: 1100px;
+	max-width: 1500px;
+	color:black;
+	font-family:Georgia,"Times New Roman",serif;
+	font-size:0.90em;
+	text-indent:2em;
+}
+#gridAll{
+	padding: 10px;
+	width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(5,220px);
+	grid-template-rows: repeat(4,110px);
+	margin-left:auto;
+	margin-right: auto;
+	gap: 20px;
+}
+#gridAll span img{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-top: 25px;
+	margin-bottom:auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.opt{
+	display: grid;
+	border: 1px solid #b8cce3;
+	border-radius: 5%;
+
+	grid-template-columns: repeat(3,66px);
+	grid-template-rows: repeat(3,66px);
+}
+.optPic{
+	grid-column: 1/2;
+	grid-row: 1/4;
+}
+.optContent{
+	margin-top: 10px;
+	grid-column: 2/4;
+	grid-row: 1/4;
+}

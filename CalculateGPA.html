@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Web page/Contact</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="generalFunction.js">
+	</script>
+		<script type="text/javascript" src="test.js"></script>
+	<script>
+		window.onload=function(){
+		var submit=document.getElementById("submit");
+		submit.onclick=function(){
+			event.preventDefault();
+			request("gpa.js");
+			console.log("gpa.js has onloaded.");
+		}
+		be_gray();
+	}
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+
+	<header>
+		<h1>Beijing Jiaotong University</h1>
+	</header>
+
+	<nav>
+		<ul style="margin: 0;" id="navigation">
+			<li><a href="home.html">Home</a>
+			</li>
+			<li><a href="Services.html" target="_blank">Services</a>
+				<ul>
+					<li><a href="CalculateGPA.html">calculate</a></li>
+				</ul>
+			</li>
+			<li><a href="Contact.html" target="_blank">Contact</a>
+			</li>
+
+		</ul>
+ 	</nav>
+
+	<main>
+		<br>
+		<div id="formContainer"></div>
+		<div id="calculate"></div>
+		<form id="myForm">
+		  <label for="number">the number of curriculums you want to calculate:</label>
+		  <input type="number" name="number" id="number" required>
+		  <button type="submit" id="submit" value="submit">submit</button>
+		</form>
+		<div id="result"></div>
+	</main>
+
+	<footer>
+		<hr>
+		<p id="decoration"><a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border:0;width:88px;height:31px"
+			src="http://jigsaw.w3.org/css-validator/images/vcss"
+            		alt="Valid CSS!" />
+    			</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    			<img style="border:0;width:88px;height:31px"
+        		src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        		alt="Valid CSS!" />
+    			</a>	
+		</p>
+     		<p>Thanks for <a href="http://webdevbasics.net">Basics of Web Design Textbook Companian</a></p>
+		<p id="right">Copyright &copy; 2024 LiRuize.All right reserved</p>
+  		</footer>
+	</div>
+</body>
+</html>
