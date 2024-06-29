@@ -39,27 +39,28 @@
 	<main>
 		<div id="statement">
 			<hr style="margin: 0;">
-			<h2 class="contacth" style="margin: 0;">Statement:</h2>
-			<p>This Web is not a official website of Beijing jiaotong University,it is just a student who want to learn HTML5 writing it,aiming to improve his ability.If this website violate your right,contacting with me and I'll delete it.Thank you.</p> 
+			<h2 class="contacth" style="margin: 0;">Legal Statement:</h2> <!--I fixed some English grammar issues for you😁-->
+			<p>This Web is not a official website of Beijing jiaotong University,it is just a student's replication  in  efforts to practise HTML5 and CSS.
+			Through this project,I have improved my web development ability.If this website violates your right in any way, please contacting with me and I'll delete it.</p> 
 		</div>
 		<div id="contacting">
-			<p>Or you have anything which make you want to associate with me,just looking this page.</p>
+			<p>If you have any queries you would like to reach out to me about, find my contact information down below,Thank You.</p>
 		</div>
 		<div style="background-image:url(Pictures/emailsend.gif);background-position: center right; background-repeat:no-repeat; background-size:contain;">
 			<hr style="margin: 0;">
-			<h2 class="contacth" style="margin: 0;">Get in contact with <b>ME</b>:</h2>
-			<p style="text-indent: 4em;">Email:<a href="mailto:lrz08302005@163.com">lrz08302005@163.com</a></p>
-			<p style="text-indent: 4em;margin: 0;">Wechat:liruize830</p>
+			<h2 class="contacth" style="margin: 0;">How to contact <b>ME</b>:</h2>
+			<p style="text-indent: 4em;">Email:<a href="mailto:lrz08302005@163.com">lrz08302005@163.com📧</a></p> <!--Added an emoji :)-->
+			<p style="text-indent: 4em;margin: 0;">Wechat:liruize830📱</p><!--Added an emoji :)-->
 		</div>
 		<div class="forms">
 			<hr style="margin: 0;">
-			<h2 class="contacth" style="margin: 0;">Get in contact with <b>YOU</h2></p>
-			<form method="post" action="send_email.php">
+			<h2 class="contacth" style="margin: 0;">How should we contact <b>YOU:</h2></p>
+			<!-- <form> -->
 				<fieldset>
 					<legend>Personal Information</legend>
 					<label for="name">Name:</label><br>
 					<input type="text" name="name" id="name" required><br>
-					<label for="route">Way to associate with you:</label><br>
+					<label for="route">Email:</label><br> <!--Most people can be professionally reached through email, plus it makes for error detection-->
 					<input type="text" name="route" id="route" required><br>
 
 					<fieldset><legend>Gender:</legend>
@@ -74,10 +75,10 @@
 						<input type="checkbox" name="schoollike" id="software" value="3">Software<br>
 				</fieldset>
 
-				<label for="ask">Things you want to acquire:</label><br><textarea name="ask" id="ask" cols="40" rows="5" maxlength="500">Enter here.</textarea><br>
-				<input type="submit">
-				<input type="reset">
-			</form>
+				<label for="ask">Things you want to acquire:</label><br><textarea name="ask" id="ask" cols="40" rows="5" maxlength="500" placeholder="Enter here:"></textarea><br> <!--This makes sure that users do not inlude the "Enter here" in the text -->
+				<button onclick="Submit()">Submit</button> <!-- Your code:<input type="submit">-->
+				<button onclick="Reset()">Reset</button><!-- Your code:<input type="reset">-->
+			<!-- </form> -->
 		</div>
 	</main>
 
@@ -98,5 +99,6 @@
 		<p>Copyright &copy; 2024 LiRuize.All right reserved</p>
   		</footer>
 	</div>
+	<script type="text/javascript" src="generalFunction.js"></script> <!--Error Functionality-->
 </body>
 </html>

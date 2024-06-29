@@ -1,4 +1,4 @@
-/*字符串读取textRead(argumentNode)*/
+/*字符串读取textRead(argumentNode)*/ /*PassionOverPain: I can't understand chinese but hopefully you can see my  logic*/
 function textRead(argumentNode){
     var s="";
     var realNode=argumentNode.childNodes||argumentNode;
@@ -45,5 +45,59 @@ function empty(parent){
     while(parent.firstChild){
         parent.removeChild(parent.firstChild);
     }
+}
+
+/*My features added start here:*/ /*我添加的功能从这里开始*/
+
+const Namebox = document.getElementById("name");
+const Emailbox = document.getElementById("route");
+const letters = /^[a-zA-Z ]*$/; // I have inlcuded a space for Name and Surname, you can remove the space if it is name only //我在名字和姓氏中包含了一个空格，如果只是名字，您可以删除该空格
+function Submit()
+{
+    var Name = Namebox.value;
+    var Email = Emailbox.value;
+    // Name Validation starts here // //名称验证从这里开始//
+    if (Name =="")   
+        {
+            window.alert("Please complete the Name field.");
+            Namebox.focus();
+        }
+        else
+        if(!Name.match(letters))
+        {
+            window.alert("Your name must contain Only Alphabets.");
+            Namebox.focus();
+        }
+        else
+    //Email Validation starts here// //电子邮件验证从这里开始//
+    if (Email =="")
+        {
+                window.alert("Please complete the Email field.");
+        }
+    else
+    if(!Email.includes("@") ||!Email.includes(".") )
+    {
+        window.alert("The Email you have entered is Invalid.")
+        Emailbox.focus();
+    }
+    else
+    {
+        window.alert(`Thnak you for reaching out to us ${Name}. We will be in touch with you at ${Email} shortly`)
+    }
+}
+function Reset() // Since we are not using a form, we need to manually reset every field// //由于我们没有使用表单，因此我们需要手动重置每个字段//
+{
+    const gender = document.getElementsByName('gender');
+    const school = document.getElementsByName('schoollike');
+    Namebox.value = "";
+    Emailbox.value = "";
+    for(i=0;i<gender.length;i++)
+        {
+            gender[i].checked =false;
+        }
+    for(i=0;i<school.length;i++)
+        {
+            school[i].checked =false;
+        }
 }
 
