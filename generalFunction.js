@@ -52,6 +52,7 @@ function empty(parent){
 const Namebox = document.getElementById("name");
 const Emailbox = document.getElementById("route");
 const letters = /^[a-zA-Z ]*$/; // I have inlcuded a space for Name and Surname, you can remove the space if it is name only //我在名字和姓氏中包含了一个空格，如果只是名字，您可以删除该空格
+const lettersChinese=/[\u4e00-\u9fff]*/;
 function Submit()
 {
     var Name = Namebox.value;
@@ -63,7 +64,7 @@ function Submit()
             Namebox.focus();
         }
         else
-        if(!Name.match(letters))
+        if((!Name.match(letters))&&(!Name.match(lettersChinese)))
         {
             window.alert("Your name must contain Only Alphabets.");
             Namebox.focus();
